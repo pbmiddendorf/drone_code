@@ -1,0 +1,4 @@
+1. Execute startStream.sh on Raspberry Pi to start the stream.
+2. Open VLC on computer. Press Media -> Open Network Stream.
+3. Network URL Format: rtsp://[IP TO THE PI]:8554/
+4. Network URL Wright State: rtsp://10.1.39.102:8554/
