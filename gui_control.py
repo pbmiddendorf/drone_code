@@ -2,7 +2,7 @@
 import Tkinter as tk
 import cv2
 from PIL import Image, ImageTk
-from ctypes import windll, Structure, c_long, byref
+from ctypes import Structure, c_long, byref
 
 def return_to_home():
     print "return to home"
@@ -52,7 +52,7 @@ if __name__ == "__main__" :
     location_init()
     button_init()
     
-    show_frame()
+   # show_frame()
 
     while 1:
     # main gui update loop
