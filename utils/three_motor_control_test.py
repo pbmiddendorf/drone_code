@@ -7,7 +7,7 @@ outputPulseWidth = 1000 #1000 is the minimum, ie not moving
 pi = pigpio.pi() #opens the local pi
 pi.set_mode(bottomMotor, pigpio.OUTPUT) #each pin has to be explicitly set to the right mode
 pi.set_mode(leftMotor, pigpio.OUTPUT)
-pi.set_mode(rightMotor, pigpio.OUTPUT)p
+pi.set_mode(rightMotor, pigpio.OUTPUT)
 pi.set_servo_pulsewidth(bottomMotor, outputPulseWidth) #sends the command to the esc over the designated pin
 pi.set_servo_pulsewidth(leftMotor, outputPulseWidth)
 pi.set_servo_pulsewidth(rightMotor, outputPulseWidth)
