@@ -12,14 +12,18 @@ pi.set_servo_pulsewidth(bottomMotor, outputPulseWidth) #sends the command to the
 pi.set_servo_pulsewidth(leftMotor, outputPulseWidth)
 pi.set_servo_pulsewidth(rightMotor, outputPulseWidth)
 
-for i in range(1, 200):
+for i in range(1, 300):
     outputPulseWidth = outputPulseWidth + 1
     pi.set_servo_pulsewidth(bottomMotor, outputPulseWidth)
+    pi.set_servo_pulsewidth(leftMotor, outputPulseWidth)
+    pi.set_servo_pulsewidth(rightMotor, outputPulseWidth)
     sleep(0.1)
 
-for i in range(1, 200):
+for i in range(1, 300):
     outputPulseWidth = outputPulseWidth - 1
     pi.set_servo_pulsewidth(bottomMotor, outputPulseWidth)
+    pi.set_servo_pulsewidth(leftMotor, outputPulseWidth)
+    pi.set_servo_pulsewidth(rightMotor, outputPulseWidth)
     sleep(0.1)
 
 pi.stop()
